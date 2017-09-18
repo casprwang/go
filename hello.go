@@ -21,4 +21,3 @@ func main() {
         res:= add(1,3)
         fmt.Println("adding function:", res)
 }
-
