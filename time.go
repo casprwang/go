@@ -4,7 +4,7 @@ import "fmt"
 import "time"
 
 func main() {
-	now:= time.Now()
+	now := time.Now()
 
 	fmt.Println(now.Year())
 }

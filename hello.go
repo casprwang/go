@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-
-
 // func plus(a int, b int) int {
 //   return a + b
 // }
@@ -14,10 +12,10 @@ import "fmt"
 // }
 
 func add(a, b int) int {
-        return a+b
+	return a + b
 }
 
 func main() {
-        res:= add(1,3)
-        fmt.Println("adding function:", res)
+	res := add(1, 3)
+	fmt.Println("adding function:", res)
 }
