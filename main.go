@@ -1,11 +1,17 @@
 package main
 
 import (
-	"github.com/wangsongiam/go/src/foobar"
+	"github.com/wangsongiam/go/src"
 	"fmt"
+	"reflect"
 )
 
 func main() {
-	count := foobar.Count(10)
-	fmt.Println(count)
+	count := bar.Bar(10)
+	// list := [3]int{1, 2, 3}
+
+	// for _, val := range list {
+	fmt.Println(reflect.TypeOf(int(count)))
+	// }
+	// fmt.Println(count)
 }
