@@ -9,8 +9,3 @@ func main() {
 	i = i + 1
 
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> bfca394fee7f6c19b268dbbbf23318828d1cca2e
