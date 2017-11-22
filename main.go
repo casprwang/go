@@ -1,17 +1,14 @@
 package main
 
 import (
-	"github.com/wangsongiam/go/src"
 	"fmt"
-	"reflect"
+
+	"github.com/wangsongiam/go/src"
 )
 
 func main() {
-	count := bar.Bar(10)
-	// list := [3]int{1, 2, 3}
+	test := []int{1, 2, 3}
+	res := play.Shuffle(test)
 
-	// for _, val := range list {
-	fmt.Println(reflect.TypeOf(int(count)))
-	// }
-	// fmt.Println(count)
+	fmt.Println(res)
 }

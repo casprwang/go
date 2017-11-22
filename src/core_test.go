@@ -1,4 +1,4 @@
-package bar
+package play
 
 import (
 	"testing"

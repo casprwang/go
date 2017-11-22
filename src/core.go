@@ -1,3 +1,3 @@
-package bar
+package play
 
 type Bar int

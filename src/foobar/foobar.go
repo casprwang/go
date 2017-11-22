@@ -1,3 +1,3 @@
-package foobar
+package bar
 
 type Count int
