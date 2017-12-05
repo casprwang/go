@@ -25,4 +25,7 @@ func main() {
 	// c := circle{5}
 	c := &circle{5}
 	info(c)
+
+	d := &circle{3}
+	info(d)
 }
