@@ -5,19 +5,36 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path"
+	"runtime"
 	"sort"
 )
 
+func UserHomeDir() string {
+	env := "HOME"
+	if runtime.GOOS == "windows" {
+		env = "USERPROFILE"
+	} else if runtime.GOOS == "plan9" {
+		env = "home"
+	}
+	return os.Getenv(env)
+}
+
 func main() {
-	srcFile, err := os.Open(".zsh_history")
+	dir := UserHomeDir()
+
+	filePath := path.Join(dir, ".zsh_history")
+
+	src, err := os.Open(filePath)
+
 	if err != nil {
 		log.Fatalln(err)
 	}
-	defer srcFile.Close()
 
+	defer src.Close()
 	count := map[string]int{}
 
-	scanner := bufio.NewScanner(srcFile)
+	scanner := bufio.NewScanner(src)
 
 	counter := 0
 	for scanner.Scan() {
